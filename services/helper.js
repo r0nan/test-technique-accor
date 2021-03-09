@@ -15,6 +15,14 @@ const distance = (lat1, lon1, lat2, lon2) => {
 	return d;
 }
 
+const closestAndCheapestHotel = (hotel1, hotel2) => {
+	if(hotel1.offer.price > hotel2.offer.price) {return 1;}
+	if(hotel1.offer.price < hotel2.offer.price) {return -1;}
+	
+	return hotel1.distance > hotel2.distance ? 1 : -1;
+}
+
 module.exports = {
-	distance: distance
+	distance,
+	closestAndCheapestHotel
 }

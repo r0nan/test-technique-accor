@@ -1,4 +1,5 @@
 const helper = require('./helper');
+const hotelService = require('./hotel-service');
 
 describe('Helper', () => {
   test('distance() returns the distance in meters betwween 2 geolocations', () => {

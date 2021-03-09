@@ -4,12 +4,23 @@
   "description": "",
   "main": "test_tech.js",
   "scripts": {
-    "test": "jest --coverage"
+    "test": "jest --coverage",
+    "test:debug": "node --inspect-brk node_module/.bin/vue-cli-service",
+    "dev": "vue-cli-service serve",
+    "build": "vue-cli-service build"
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {},
+  "dependencies": {
+    "vue": "^2.6.12"
+  },
   "devDependencies": {
-    "jest": "^26.6.3"
+    "@tailwindcss/postcss7-compat": "^2.0.3",
+    "@vue/cli-service": "^3.8.0",
+    "autoprefixer": "^9.8.6",
+    "jest": "^26.6.3",
+    "postcss": "^7.0.35",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.3",
+    "vue-template-compiler": "^2.6.10"
   }
 }
